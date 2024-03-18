@@ -1,0 +1,23 @@
+@use '../../abstracts' as *;
+
+.welcome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 700;
+    font-family: inherit;
+    width: 80%;
+}
+
+.welcome-main{
+
+        font-size: 75px;
+
+
+}
+.welcome-sub{
+
+        font-family: BasisGrotesque,Avenir,Helvetica Neue,Helvetica,sans-serif;
+        font-size: 24px;
+
+}

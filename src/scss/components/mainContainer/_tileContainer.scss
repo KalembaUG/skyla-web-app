@@ -1,0 +1,49 @@
+@use '../../abstracts' as *;
+
+.tile-container {
+    display: flex;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 90px;
+    max-width: 1480px;
+}
+.bimmer-container, .tile-map-container {
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    font-family: Freight,HoeflerText-Black,Times New Roman,serif;
+    height: 470px;
+    text-align: center;
+    width: 100%;
+}
+.tile-container h5 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    padding: 140px 0 0;
+    text-transform: uppercase;
+}
+.tile-container h3 {
+    font-size: 62px;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+.tile-container a, .tile-container p {
+    font-family: BasisGrotesque,Avenir,Helvetica Neue,Helvetica,sans-serif;
+}
+.tile-container p {
+    font-size: 18px;
+}
+.tile-button {
+    margin-top: 50px;
+}
+
+.tile-map-container {
+    background-image: url('../../../images/map.jpg');
+    background-position-y: center;
+    margin-left: 20px;
+}
+.bimmer-container {
+    background-image: url('../../../images/bimmer.jpg');
+    background-position-y: center;
+}

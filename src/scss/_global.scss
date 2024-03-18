@@ -1,0 +1,15 @@
+@use './abstracts/index' as *;
+
+body{
+    margin: 0px;
+    font-size: $font-size;
+    color:$text-color;
+    font-family: 'Times New Roman', Times, serif;
+    button{
+        color:$text-color;
+        
+    }
+    ul{
+        list-style: none;
+    }
+}

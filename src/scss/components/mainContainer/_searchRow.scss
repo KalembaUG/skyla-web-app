@@ -1,0 +1,93 @@
+@use '../../abstracts' as *;
+
+.search-row{
+    margin-top: 68px;
+    background-color: white;
+    display:flex;
+    flex-direction: row;
+    width:80%;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0px 5px 0px 10px;
+    border-radius: 25px;
+    input{
+        &:focus{
+
+            // background-color: black;
+
+
+
+
+            outline:none;
+        }
+    }
+
+    .search{
+
+            background-color: #59d389;
+            background-image: url('../../../images/search.png');
+            background-position: 50%;
+            background-repeat: no-repeat;
+            background-size: 40px;
+            border-color: #59d389;
+            border-radius: 50%;
+            height: 40px;
+            width: 40px;
+            cursor: pointer;
+        
+    }
+
+
+}
+.where-input{
+
+        background-color: #fff;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        font-size: 18px;
+
+}
+
+.from-pickers, .until-pickers{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.from, .until{
+
+    // background-color: black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px black solid;
+
+
+
+}
+.date-picker{
+    border:none;
+    font-size: 16px;
+}
+
+.react-datepicker__time-list-item--selected, .react-datepicker__day--selected{
+    background-color: $primary-color !important;
+}
+
+.react-datepicker__day-name, .react-datepicker__day, .react-datepicker__time-name{
+    
+}
+.rc-time-picker-input{
+    border:none !important;
+    font-size: 18px !important;
+
+}
+
+.rc-time-picker-panel-input {
+    font-size: 18px;
+}

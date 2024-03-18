@@ -1,0 +1,48 @@
+@use '../../abstracts' as *;
+
+
+.top-navigation-container{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: bold;
+    z-index: inherit;
+
+    
+    .login ,.sign-up{
+
+        // background-color: black;
+        font-size: $font-size;
+        background: none;
+        cursor: pointer;
+        border: none;
+        font-weight: bold;
+        margin-left: 10px;
+        background-color: white;
+        z-index: 400;
+        
+        padding: 5px;
+        width :90px;
+        border: 0.5px $primary-color solid;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        border-radius: 3px;
+        filter:drop-shadow(2px 2px 2px $primary-color);
+        
+        
+    }
+    .list-your-car{
+        
+        padding: 5px;
+        width:auto;
+        border: 0.5px $primary-color solid;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        background-color: white;
+        border-radius: 3px;
+        filter:drop-shadow(2px 2px 2px $primary-color);
+        cursor: pointer;
+        z-index: 9000000000000000000000000;
+
+    }
+}
+

@@ -1,0 +1,17 @@
+@use '../../abstracts' as*;
+
+.header{
+    // background-color: $primary-color;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: $header-height;
+    padding:0 $header-padding 0 $header-padding ;
+
+    left: 0px;
+    z-index: 9999999999;
+}
+.top-bar-logo{
+    max-height: $header-height;
+}

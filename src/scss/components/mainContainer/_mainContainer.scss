@@ -1,0 +1,14 @@
+@use '../../abstracts' as *;
+
+.main-container{
+    height: 100vh;
+    background-image: url('../../../images/gtr.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
