@@ -9,8 +9,9 @@ import moment from 'moment';
 
 
 const SearchRow = () => {
-    const [selectedDate, setSelectedDate] = useState(new Date())
-
+    const [selectedDateFrom, setSelectedDateFrom] = useState(new Date())
+    const [selectedDateUntil, setSelectedDateUntil] = useState(new Date())
+    
 
     return (
         <div className='search-row'>
@@ -25,8 +26,8 @@ const SearchRow = () => {
                 <div className='from-pickers'>
 
                     <ReactDatePicker
-                        selected={selectedDate}
-                        onChange={(date) => setSelectedDate(date)}
+                        selected={selectedDateFrom}
+                        onChange={(date) => setSelectedDateFrom(date)}
                         toggleCalendarOnIconClick className='date-picker' />
                     <TimePicker showSecond={false } defaultValue={moment()}/>
 
@@ -37,9 +38,9 @@ const SearchRow = () => {
                 <div className='until-pickers'>
 
                     <ReactDatePicker
-                        selected={selectedDate}
+                        selected={selectedDateUntil}
                         
-                        onChange={(date) => setSelectedDate(date)}
+                        onChange={(date) => setSelectedDateUntil(date)}
                         toggleCalendarOnIconClick className='date-picker' />
                     <TimePicker showSecond={false } defaultValue={moment()}/>
                 </div>
