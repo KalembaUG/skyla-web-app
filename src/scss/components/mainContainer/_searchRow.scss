@@ -2,13 +2,13 @@
 
 .search-row{
     margin-top: 68px;
-    background-color: white;
+
     display:flex;
-    flex-direction: row;
-    width:80%;
+    flex-direction: column;
+
     justify-content: space-between;
     align-items: center;
-    height: 50px;
+
     padding: 0px 5px 0px 10px;
     border-radius: 25px;
     input{
@@ -25,25 +25,60 @@
 
     .search{
 
-            background-color: #59d389;
-            background-image: url('../../../images/search.png');
-            background-position: 50%;
-            background-repeat: no-repeat;
-            background-size: 40px;
-            border-color: #59d389;
-            border-radius: 50%;
-            height: 40px;
-            width: 40px;
-            cursor: pointer;
+
+
+
+            font-size: 18px;
+            line-height: 24px;
+            min-height: 56px;
+            min-width: 56px;
+            padding: 14px 32px;
+            width: 100%;
+            height: 100%;
+        border: 2px solid $primary-color;
+        border-radius: 36px;
+        cursor: pointer;
+
         
     }
+    
+}
+.search-button{
+    height: 72px;
+    width: 100%;
+
 
 
 }
+
+.where, .from , .until{
+    display: flex;
+    flex-direction: row;
+    height: 72px;
+    border-radius: 36px;
+    background-color: white;
+    align-items: center;
+    margin-left: 5px;
+ 
+}
+.where{
+    min-width: 100%;
+    margin-bottom: 16px;
+    border: 2px solid $primary-color;
+
+}
+
+
+.from-until{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 16px;
+    
+}
 .where-input{
 
-        background-color: #fff;
-        border: 1px solid #fff;
+    background-color: #fff;
+    border: 1px solid #fff;
         border-radius: 5px;
         font-size: 18px;
 
@@ -54,18 +89,46 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
 
+//
+//  ICONS
+//
+.location-icon{
+    width: 20px;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin:0px 16px;
 
+}
 
+.calendar-icon{
+    width:25px;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+}
 
 .from, .until{
 
     // background-color: black;
-    padding: 10px;
+
     display: flex;
-    flex-direction: column;
-    border-left: 1px black solid;
+    flex-direction: row;
+    padding:0px 16px;
+    border:2px solid $primary-color;
+    span{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        justify-content: center;
+    }
+
 
 
 
@@ -73,6 +136,7 @@
 .date-picker{
     border:none;
     font-size: 16px;
+    max-width: 100px;
 }
 
 .react-datepicker__time-list-item--selected, .react-datepicker__day--selected{
@@ -85,9 +149,18 @@
 .rc-time-picker-input{
     border:none !important;
     font-size: 18px !important;
+    width: 60px !important;
 
 }
 
 .rc-time-picker-panel-input {
     font-size: 18px;
+}
+.react-datepicker-wrapper{
+    height: 100%;
+    justify-content: center;
+    display: flex !important;
+    flex-direction: column;
+    border-right:0.5px solid rgb(183, 254, 251) !important;
+    margin-left:1px;
 }
