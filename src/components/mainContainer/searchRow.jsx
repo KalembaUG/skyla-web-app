@@ -4,7 +4,8 @@ import TimePicker from 'rc-time-picker';
 import 'rc-time-picker/assets/index.css';
 import "react-datepicker/dist/react-datepicker.css";
 import moment from 'moment';
-import { LocationIcon ,CalendarStartIcon, CalendarEndIcon} from '../icons';
+import { LocationIcon, CalendarStartIcon, CalendarEndIcon } from '../icons';
+import handShake from '../../images/handShake.png'
 
 
 
@@ -15,6 +16,8 @@ const SearchRow = () => {
     
 
     return (
+
+        <div className="search-row-combined">
         <div className='search-row'>
             
             <div className='where'>
@@ -50,7 +53,11 @@ const SearchRow = () => {
                 </div>
                 </div>
             <div className='search-button'><button className='search'>Search</button></div>
-        </div>
+            </div>
+            <div className="side-image">
+                <img src={handShake} alt="hand shake skyla" />
+            </div>
+            </div>
     );
 }
 
